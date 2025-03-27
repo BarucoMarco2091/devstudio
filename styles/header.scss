@@ -1,0 +1,61 @@
+@import '../styles/variables.scss';
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../assets/bg.jpg');
+    height: 60%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        padding: 5dvh;
+
+        .nav-icons {
+            display: flex;
+
+            i {
+                margin-right: 2dvh;
+                transition: color .9s;
+            }
+
+            i:hover {
+                color: $pink;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            width: 25dvh;
+            height: 6dvh;
+            border-radius: 2dvh;
+            border: 1px solid $white;
+            transition: border .9s;
+        }
+
+        button:hover {
+            border: 2px solid $pink;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 4dvh;
+    }
+
+    div {
+        width: 35dvh;
+        height: 5dvh;
+        margin: 0 auto;
+        padding-top: 2dvh;
+
+        .hour {
+            font-family: 'Poppins', serif;
+            font-size: 1rem;
+            color: $white;
+            background-color: $green;
+            border-radius: 1dvh;
+            text-align: center;
+        }
+    }
+}
