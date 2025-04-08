@@ -11,7 +11,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/bg.jpg");
   height: 60%;
 }
 header nav {
@@ -41,6 +41,54 @@ header nav button {
 }
 header nav button:hover {
   border: 2px solid #eba39f;
+}
+header h1 {
+  text-align: center;
+  margin-top: 4dvh;
+}
+header div {
+  width: 35dvh;
+  height: 5dvh;
+  margin: 0 auto;
+  padding-top: 2dvh;
+}
+header div .hour {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  color: #F5F5F5;
+  background-color: rgb(61, 158, 61);
+  border-radius: 1dvh;
+  text-align: center;
+}
+
+main {
+  max-width: 1240px;
+  margin: auto;
+}
+main .about {
+  display: flex;
+  margin-top: 10dvh;
+}
+main .about div {
+  flex: 1;
+}
+main .about .text {
+  text-align: center;
+  margin-right: 4dvh;
+}
+main .about .text h2 {
+  margin-bottom: 3dvh;
+}
+main .about .text p {
+  line-height: 2rem;
+}
+main .about img {
+  filter: brightness(50%);
+  transition: transform 0.9s;
+  border-radius: 2dvh;
+}
+main .about img:hover {
+  transform: scale(1.1);
 }
 
 * {

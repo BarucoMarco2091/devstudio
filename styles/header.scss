@@ -1,7 +1,17 @@
 @import '../styles/variables.scss';
 
+@keyframes scale {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
 header {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../assets/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/bg.jpg');
     height: 60%;
 
     nav {
@@ -17,10 +27,12 @@ header {
             i {
                 margin-right: 2dvh;
                 transition: color .9s;
+                transition: animation 0.4s;
             }
 
             i:hover {
                 color: $pink;
+                animation: scale 1s infinite alternate;
             }
         }
 

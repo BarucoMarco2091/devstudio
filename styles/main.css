@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 main {
@@ -28,4 +29,107 @@ main .about img {
 }
 main .about img:hover {
   transform: scale(1.1);
+}
+main .services h2 {
+  text-align: center;
+  margin: 5dvh 5dvh;
+}
+main .services .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .services .grid .card {
+  display: flex;
+  gap: 3dvh;
+  padding: 1dvh 1dvh;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+main .services .grid .card .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 1s;
+  filter: brightness(50%);
+  padding-bottom: 3dvh;
+}
+main .services .grid .card .card-img img:hover {
+  transform: scale(1.1);
+}
+main .services .grid .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3dvh;
+  text-align: center;
+}
+main .services .grid .card .card-body .card-title {
+  color: #F5F5F5;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 3dvh 3dvh;
+  text-align: center;
+}
+main .services .grid .card .card-body .card-description {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #F5F5F5;
+}
+main .services .grid .card .card-body .card-btn {
+  margin-right: 2dvh;
+  width: 17dvh;
+  height: 5dvh;
+  background-color: transparent;
+  border: 1px solid #F5F5F5;
+  border-radius: 1dvh;
+  transition: border 1s;
+  margin-top: 3dvh;
+}
+main .services .grid .card .card-body .card-btn:hover {
+  border: 2px solid #eba39f;
+}
+main .services .grid div {
+  flex: 1;
+}
+main .team h2 {
+  text-align: center;
+  margin: 5dvh 5dvh;
+}
+main .team .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3dvh;
+}
+main .team .grid-container .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+}
+main .team .grid-container .card img {
+  border-radius: 2dvh;
+  filter: brightness(50%);
+  transition: transform 1sç;
+}
+main .team .grid-container .card img:hover {
+  transform: rotate(2deg);
+}
+main .team .grid-container .card .card-name {
+  font-size: 1.3rem;
+  margin: 3dvh 3dvh;
+}
+main .team .grid-container .card .card-description {
+  color: #F5F5F5;
+  text-align: center;
+  line-height: 2rem;
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+}
+main .location h2 {
+  text-align: center;
+  margin: 5dvh 5dvh;
 }/*# sourceMappingURL=main.css.map */
