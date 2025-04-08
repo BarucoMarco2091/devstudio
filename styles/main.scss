@@ -135,7 +135,7 @@ main {
                 img {
                     border-radius: 2dvh;
                     filter: brightness(50%);
-                    transition: transform 1sç;
+                    transition: transform 1s;
                 }
 
                 img:hover {
@@ -153,6 +153,106 @@ main {
                     line-height: 2rem;
                     font-family: 'Poppins', serif;
                     font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        padding: 15dvh 5dvh;
+        border-bottom: 1px solid $white;
+
+        div {
+            flex: 1;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            img {
+                display: none;
+            }
+
+            h2 {
+                color: $white;
+                font-weight: 600;
+                margin-bottom: 5dvh;
+            }
+
+            p {
+                font-size: 1.3rem;
+                color: $white;
+                line-height: 2rem;
+            }
+
+            div {
+                position: absolute;
+                left: -50dvh;
+                top: 40dvh;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name,
+            .email,
+            .message {
+                display: flex;
+
+                p {
+                    margin-top: 2dvh;
+                    margin-right: 2dvh;
+                    color: $white;
+                    text-align: center;
+                }
+
+                #text,
+                #email,
+                #msg {
+                    width: 70dvh;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid $white;
+                    color: $white;
+                    font-family: 'Poppins', serif;
+                }
+
+                #text,
+                #email {
+                    height: 10dvh;
+                }
+
+                #msg {
+                    height: 30dvh;
+                }
+            }
+
+            .send-msg-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .submit-btn {
+                    margin-top: 3dvh;
+                    color: $white;
+                    background-color: transparent;
+                    border: none;
+                    transition: color .8s, border-bottom .8s;
+                }
+
+                .submit-btn:hover {
+                    color: $green;
+                    border-bottom: 2px solid $green;
                 }
             }
         }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 main {
@@ -113,7 +112,7 @@ main .team .grid-container .card {
 main .team .grid-container .card img {
   border-radius: 2dvh;
   filter: brightness(50%);
-  transition: transform 1sç;
+  transition: transform 1s;
 }
 main .team .grid-container .card img:hover {
   transform: rotate(2deg);
@@ -128,6 +127,104 @@ main .team .grid-container .card .card-description {
   line-height: 2rem;
   font-family: "Poppins", serif;
   font-size: 1rem;
+}
+main .contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  padding: 15dvh 5dvh;
+  border-bottom: 1px solid #F5F5F5;
+}
+main .contact-container div {
+  flex: 1;
+}
+main .contact-container .text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .contact-container .text img {
+  display: none;
+}
+main .contact-container .text h2 {
+  color: #F5F5F5;
+  font-weight: 600;
+  margin-bottom: 5dvh;
+}
+main .contact-container .text p {
+  font-size: 1.3rem;
+  color: #F5F5F5;
+  line-height: 2rem;
+}
+main .contact-container .text div {
+  position: absolute;
+  left: -50dvh;
+  top: 40dvh;
+}
+main .contact-container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .contact-container .form .name,
+main .contact-container .form .email,
+main .contact-container .form .message {
+  display: flex;
+}
+main .contact-container .form .name p,
+main .contact-container .form .email p,
+main .contact-container .form .message p {
+  margin-top: 2dvh;
+  margin-right: 2dvh;
+  color: #F5F5F5;
+  text-align: center;
+}
+main .contact-container .form .name #text,
+main .contact-container .form .name #email,
+main .contact-container .form .name #msg,
+main .contact-container .form .email #text,
+main .contact-container .form .email #email,
+main .contact-container .form .email #msg,
+main .contact-container .form .message #text,
+main .contact-container .form .message #email,
+main .contact-container .form .message #msg {
+  width: 70dvh;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F5F5F5;
+  color: #F5F5F5;
+  font-family: "Poppins", serif;
+}
+main .contact-container .form .name #text,
+main .contact-container .form .name #email,
+main .contact-container .form .email #text,
+main .contact-container .form .email #email,
+main .contact-container .form .message #text,
+main .contact-container .form .message #email {
+  height: 10dvh;
+}
+main .contact-container .form .name #msg,
+main .contact-container .form .email #msg,
+main .contact-container .form .message #msg {
+  height: 30dvh;
+}
+main .contact-container .form .send-msg-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contact-container .form .send-msg-btn .submit-btn {
+  margin-top: 3dvh;
+  color: #F5F5F5;
+  background-color: transparent;
+  border: none;
+  transition: color 0.8s, border-bottom 0.8s;
+}
+main .contact-container .form .send-msg-btn .submit-btn:hover {
+  color: rgb(61, 158, 61);
+  border-bottom: 2px solid rgb(61, 158, 61);
 }
 main .location h2 {
   text-align: center;
