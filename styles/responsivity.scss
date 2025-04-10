@@ -1,15 +1,52 @@
 @import '../styles/variables.scss';
 
 @media (width >= 768px) {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
+    nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
     }
 }
 
 @media (width >= 768px) {
+    main {
+        padding: 1dvh 1dvh;
+    }
+}
+
+@media (width >= 768px) {
+    .about {
+        display: flex;
+        flex-direction: row !important;
+    }
+}
+
+@media (width >=768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+
+        .card {
+            display: flex;
+            flex-direction: row !important;
+        }
+    }
+}
+
+@media (width >=768px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (width >= 768px) {
+    .contact-container {
+        display: flex;
+        flex-direction: row !important;
+
+        .form {
+            width: 100% !important;
+        }
     }
 }
