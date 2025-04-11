@@ -1,6 +1,6 @@
 @import '../styles/variables.scss';
 
-@media (width >= 768px) {
+@media (width >= 1024px) {
     nav {
         display: flex;
         flex-direction: row !important;
@@ -8,20 +8,20 @@
     }
 }
 
-@media (width >= 768px) {
+@media (width >= 1024px) {
     main {
         padding: 1dvh 1dvh;
     }
 }
 
-@media (width >= 768px) {
+@media (width >= 1024px) {
     .about {
         display: flex;
         flex-direction: row !important;
     }
 }
 
-@media (width >=768px) {
+@media (width >= 1024px) {
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
@@ -33,14 +33,14 @@
     }
 }
 
-@media (width >=768px) {
+@media (width >= 1024px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 
-@media (width >= 768px) {
+@media (width >= 1024px) {
     .contact-container {
         display: flex;
         flex-direction: row !important;
